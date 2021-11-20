@@ -107,17 +107,10 @@ console.log(`Computer won ${computerWins} games`);
 console.log(`${numberOfDraws} games drawed`);
 console.log(`${gameRound} round`);
 
-let gameContinue = prompt("Would you like to continue?");
-
-if(gameContinue === "Yes"){
-    alert("Let's Go!")
-} else{
-    alert("Thanks for playing!") 
-
-        break;
-
-    }
+lif (confirm(`${myName} would you like to play again?`) === true) {
+    playAgain = true;
+  } else break;
     
 }
-/*in between each round, prompt would appear asking user if they wanted to continue. If statement used so when user inputs 'Yes', 
-game would proceed. If input 'No', "Thanks for playing! message would appear". */
+/*in between each round, prompt would appear asking user if they wanted to continue. If statement used so when user selects 'OK', 
+game would proceed. If select 'cancel', game would cancel. */
